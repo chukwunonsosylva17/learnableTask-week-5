@@ -13,7 +13,8 @@ This example provides a starting points for Student Management System which are 
 
 ## **4. Polymorphism:**
  * The displayStudentdetails method is an example of polymorphism, as it can be called on any Student object regardless of its specific attributes and grades. Not directly used in this simplified example.
-  <br> 
+ <br> 
+ 
 ## **Key Features:**
  * Student Class:
    * Stores student data (firstName, lastName, id 
@@ -26,12 +27,15 @@ This example provides a starting points for Student Management System which are 
    * Update student grade by ID.
    * Update student details by ID.
    * Update student ID.
-   <br>
+<br>
+
  ## **Object-Oriented Principles:**
    * Encapsulation, abstraction, inheritance, and polymorphism are demonstrated (though basic examples of inheritance and polymorphism are not included).
-   <br>
+<br>
+
  ## **Example Usage:**
    * Demonstrates how to create Student objects and use their methods.
-   <br>
+<br>
+
  ## **Note:**
  * This example uses an array to store student grades. More data structure could be used to achieve the goal of the Student Management System.
