@@ -11,11 +11,10 @@ This example provides a starting points for Student Management System which are 
 ## **3. Inheritance:**
  * Not directly used in this example. Inheritance could be used for Student class for it to potentialy inherit from Person class if you wanted to add specific attributes or behaviors and methods common to all people.
 
-## ** 4. Polymorphism:**
+## **4. Polymorphism:**
  * The displayStudentdetails method is an example of polymorphism, as it can be called on any Student object regardless of its specific attributes and grades. Not directly used in this simplified example.
-<br> 
-
-## ** Key Features:**
+  <br> 
+## **Key Features:**
  * Student Class:
    * Stores student data (firstName, lastName, id 
    * grades []).
@@ -28,14 +27,11 @@ This example provides a starting points for Student Management System which are 
    * Update student details by ID.
    * Update student ID.
    <br>
-
- ## ** Object-Oriented Principles:**
+ ## **Object-Oriented Principles:**
    * Encapsulation, abstraction, inheritance, and polymorphism are demonstrated (though basic examples of inheritance and polymorphism are not included).
    <br>
-
- ## ** Example Usage:**
+ ## **Example Usage:**
    * Demonstrates how to create Student objects and use their methods.
-<br>
-
-## ** Note:**
+   <br>
+ ## **Note:**
  * This example uses an array to store student grades. More data structure could be used to achieve the goal of the Student Management System.
