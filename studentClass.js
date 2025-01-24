@@ -6,9 +6,11 @@ class Student {
         this.grades = [];
     }
     // Method to add new grades for a student
-    addGrade(grade) {
-        this.grades.push(grade);
+    addGrade(grades) {
+        for (let i = 0; i < grades.length; i++) {
+        this.grades.push(grades[i]);
     }
+}
     // Method to calculate the average grade of a student
     calculateAverageGrade() {
         if (this.grades.length === 0) {
@@ -21,14 +23,14 @@ class Student {
     displayStudentInfo() {
         console.log(`Student Name: ${this.firstName} ${this.lastName}`);
         console.log(`Student ID: ${this.id}`);
-            console.log(`Grades: ${this.grades.join(", ")}`);
+            console.log(`[Grades: ${this.grades.join(", ")}]`);
         console.log(`Average Grade: ${this.calculateAverageGrade().toFixed(2)}`);
         ;
     }
    }
     // Define a StudentManagementSystem class
     class StudentManagementSystem {
-    // Constructor to initialize an epmty array of students
+     //Constructor to initialize an epmty array of students
     constructor() {
         this.students = [];
     }
@@ -109,18 +111,12 @@ studentManager.displayStudentInfo();
 // For adding grades to students in the system
 const student1 = studentManager.findStudentById("ME6410");
 if (student1) {
-    student1.addGrade(75);
-    student1.addGrade(85);
-    student1.addGrade(70);
-    student1.addGrade(95);
+    student1.addGrade([75, 85, 70, 95]);
 }
 
 const student2 = studentManager.findStudentById("ME9966");
 if (student2) {
-student2.addGrade(80)
-student2.addGrade(75);
-student2.addGrade(65);
-student2.addGrade(70);
+student2.addGrade([80, 75, 65, 70]);
 }
 
 // For displaying of the student's details again after adding grades to them 
@@ -128,10 +124,10 @@ student1.displayStudentInfo();
 student2.displayStudentInfo();
 
 // For deleting a student by ID 
-studentManager.deleteStudentById(6410);
+studentManager.deleteStudentById("ME6410");
 
 // For updating a student grade by ID 
-studentManager.updateStudentGradeById(9966, 90);
+studentManager.updateStudentGradeById("ME9966", [90]);
 
 // For updating a student details by ID 
 studentManager.updateStudentDetailsById("ME9966", "Chukwunonso", "Sylver");
