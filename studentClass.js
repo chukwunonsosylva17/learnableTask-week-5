@@ -1,10 +1,17 @@
-class Student {
+class User {
     constructor(firstName, lastName, id) {
         this.firstName = firstName;
-        this.lastName = lastName
+        this.lastName = lastName;
         this.id = id;
-        this.grades = [];
     }
+}
+const user = new User ();
+// student class showing inheritance from the user class
+class Student extends User {
+    constructor (firstName, lastName, id) {
+        super (firstName, lastName, id);
+        this.grades = [];
+}
     // Method to add new grades for a student
     addGrade(grades) {
         for (let i = 0; i < grades.length; i++) {
@@ -30,7 +37,7 @@ class Student {
    }
     // Define a StudentManagementSystem class
     class StudentManagementSystem {
-     //Constructor to initialize an epmty array of students
+     // Constructor to initialize an epmty array of students
     constructor() {
         this.students = [];
     }

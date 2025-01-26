@@ -9,7 +9,7 @@ This example provides a starting points for Student Management System which are 
  * The user interacts with the Student class through its public methods (constructor, calculateAverageGrade(), displayStudentInfo()), without needing to know the internal implementation details.
 
 ## **3. Inheritance:**
- * Not directly used in this example. Inheritance could be used for Student class for it to potentialy inherit from Person class if you wanted to add specific attributes or behaviors and methods common to all people.
+ * Inheritance is used for Student class for it to potentialy inherit from User class, for you wanted to add specific attributes or behaviors and methods common to all people.
 
 ## **4. Polymorphism:**
  * The displayStudentdetails method is an example of polymorphism, as it can be called on any Student object regardless of its specific attributes and grades. Not directly used in this simplified example.
